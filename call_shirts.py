@@ -1,6 +1,6 @@
 import os
 
-for i in range(0,19):
+for i in range(1,19):
 
 	shirt_path="original_shirts/"+str(i)+".png"
 	print(shirt_path)
