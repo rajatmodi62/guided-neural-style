@@ -25,7 +25,7 @@ print(args.shirt_path.split('/')[1][:-4])
 
 #loop over the handbags
 for i,handbag_path in enumerate(handbag_list):
-    print('handbag',i+1, " out of ", len(handbag_list), " being processed")
+    print('handbag',i+1, " out of ", len(handbag_list), " being processed","shirt is",args.shirt_path)
     (output_dump_directory /'output'/(args.shirt_path.split('/')[1][:-4])/handbag_path.split('/')[1][:-4]).mkdir(exist_ok=True, parents=True)
     output_dir= 'output/'+args.shirt_path.split('/')[1][:-4]+'/'+handbag_path.split('/')[1][:-4]
     #print(output_dir)
